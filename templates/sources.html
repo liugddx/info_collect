@@ -1,0 +1,13 @@
+<!-- templates/sources.html -->
+{% extends "base.html" %}
+
+{% block content %}
+<h2>文章来源</h2>
+<ul class="list-group">
+    {% for source in sources %}
+    <li class="list-group-item">
+        <a href="/source/{{ source }}">{{ source }}</a>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}

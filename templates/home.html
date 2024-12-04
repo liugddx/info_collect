@@ -1,0 +1,15 @@
+<!-- templates/home.html -->
+{% extends "base.html" %}
+
+{% block content %}
+<h2>每日推荐最热文章</h2>
+<ul class="list-group">
+    {% for article in articles %}
+    <li class="list-group-item">
+        <a href="{{ article.url }}" target="_blank">{{ article.title }}</a>
+        <p>{{ article.description }}</p>
+        <small>来源: {{ article.source }} | 发布于: {{ article.published_at }}</small>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}

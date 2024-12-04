@@ -1,0 +1,30 @@
+<!-- templates/base.html -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>信息收集工具</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">信息收集工具</a>
+            <div class="collapse navbar-collapse">
+                <form class="d-flex" action="/search" method="get">
+                    <input class="form-control me-2" type="search" placeholder="关键词" name="keyword" required>
+                    <button class="btn btn-outline-success" type="submit">搜索</button>
+                </form>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/sources">来源</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-4">
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>

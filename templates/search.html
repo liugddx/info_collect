@@ -1,0 +1,19 @@
+<!-- templates/search.html -->
+{% extends "base.html" %}
+
+{% block content %}
+<h2>搜索结果 for "{{ keyword }}"</h2>
+{% if articles %}
+<ul class="list-group">
+    {% for article in articles %}
+    <li class="list-group-item">
+        <a href="{{ article.url }}" target="_blank">{{ article.title }}</a>
+        <p>{{ article.description }}</p>
+        <small>来源: {{ article.source }} | 发布于: {{ article.published_at }}</small>
+    </li>
+    {% endfor %}
+</ul>
+{% else %}
+<p>没有找到相关的文章。</p>
+{% endif %}
+{% endblock %}
