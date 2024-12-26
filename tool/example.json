@@ -1,0 +1,59 @@
+{
+  "id": "urn:ngsi-ld:Distribution:id:NUZE:76215118",
+  "type": "Distribution",
+  "accessService": [
+    ""
+  ],
+  "accessURL": [
+    "https://datos.comunidad.madrid/catalogo/dataset/134210b4-3fbc-457d-8064-18d6d8cc785e/resource/fca9a0ef-60b3-44bc-8a69-c17d607b122d/download/alojamientos_turisticos.csv"
+  ],
+  "address": {
+    "addressCountry": "Luxembourg",
+    "addressLocality": "Luxembourg",
+    "addressRegion": "Luxembourg",
+    "postOfficeBoxNumber": "",
+    "postalCode": "24004",
+    "streetAddress": "Luxembourg platz 2"
+  },
+  "availability": "yes",
+  "byteSize": 43503,
+  "checksum": "H3FR.",
+  "compressionFormat": "",
+  "belongsToDataset": "urn:ngsi-ld:Dataset:items:CHIF:23645981",
+  "description": [
+    "Distribution of open data portals in csv"
+  ],
+  "page": [],
+  "downloadURL": [
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.Weather/master/WeatherObserved/examples/example.json"
+  ],
+  "format": " text/csv",
+  "hasPolicy": "Open data policy.",
+  "language": [
+    "EN",
+    "ES"
+  ],
+  "license": "CC-BY",
+  "conformsTo": ["https://raw.githubusercontent.com/smart-data-models/dataModel.Weather/master/WeatherObserved/schema.json"],
+  "location": {
+    "coordinates": [
+      -67.057831,
+      67.968509
+    ],
+    "type": "Point"
+  },
+  "mediaType": "application/json",
+  "modified": "1986-03-28T19:56:43Z",
+  "packagingFormat": "zip",
+  "issued": "1997-05-06T05:04:10Z",
+  "rights": "copyleft",
+  "spatialResolutionInMeters": [
+    0.5,
+    0.5
+  ],
+  "status": "Withdrawn",
+  "temporalResolution": "PT15M",
+  "title": [
+    "Dataset base"
+  ]
+}
